@@ -20,6 +20,10 @@ Das Skript erzeugt die Android-Plattformdateien, trägt die WLAN-/Multicast-Rech
 build/app/outputs/flutter-apk/app-release.apk
 ```
 
+```
+fvm flutter build apk --release --split-per-abi
+```
+
 Installieren per `adb install -r build/app/outputs/flutter-apk/app-release.apk` oder die APK aufs Handy kopieren.
 Die Release-APK ist mit dem Debug-Key signiert und damit für Sideloading gedacht.
 
